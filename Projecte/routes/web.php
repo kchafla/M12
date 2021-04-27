@@ -16,13 +16,25 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/update', function(){
+    return view('edit');
+})->name('update');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
 Route::get('/prueba', function() {
-    return view('prueba');
+    return view('pruebaV');
 })->middleware(['auth'])->name('prueba');
+
+Route::get('/prueba', function(){
+    return view('prueba');
+});
+
+Route::get('/videos', function(){
+    return view('videosUser');
+})->name('videos');
+
 
 require __DIR__.'/auth.php';
