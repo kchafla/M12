@@ -5,8 +5,22 @@ namespace App\Http\Controllers;
 use App\Models\Video;
 use Illuminate\Http\Request;
 
+use App\Events\ChangedVideo;
+
 class VideoController extends Controller
 {
+    public function ChangeVideo(Request $request) {
+        $video = new Video;
+        $video->setAttribute("room_id", $request->room);
+        $video->setAttribute("user_id", Auth::user()->id);
+        $video->setAttribute("link", $request->video);
+        $video->save();
+
+        event(new ChangedVideo($video));
+
+        return back();
+    }
+
     /**
      * Display a listing of the resource.
      *

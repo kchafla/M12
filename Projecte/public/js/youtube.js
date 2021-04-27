@@ -28,10 +28,24 @@ function onPlayerReady(event) {
 
 var done = false;
 function onPlayerStateChange(event) {
-    if (event.data == YT.PlayerState.BUFFERING) {
-        console.log(player.getCurrentTime());
-    }
-    if (event.data == YT.PlayerState.PLAYING && !done) {
+    if (done) {
+        /// DETECTAR QUAN EL REPRODUCTOR ESTÀ ACTIVAT ///
+        if (event.data == YT.PlayerState.PLAYING) {
+            console.log("REPRODUCIENDO");
+        }
+        /// DETECTAR QUAN EL REPRODUCTOR ESTÀ EN PAUSA ///
+        if (event.data == YT.PlayerState.PAUSED) {
+            console.log("PAUSA");
+        }
+        /// DETECTAR QUAN EL USUARI CANVIA EL TEMPS DEL VIDEO ///
+        if (event.data == YT.PlayerState.BUFFERING) {
+            console.log("TIEMPO");
+        }
+    } else if (event.data == YT.PlayerState.PLAYING && !done) {
+        Echo.private('room')
+        .listen('ChangedVideo', (e) => {
+            player.loadVideoById(e.link, 0, "large");
+        });
         done = true;
     }
 }
@@ -50,7 +64,18 @@ $form.submit(function(e) {
         videos.items.forEach(video => {
             let $thumbnail = $("<img>").attr("src", video.snippet.thumbnails.medium.url).attr("alt", video.snippet.title);
             $thumbnail.click(function() {
-                player.loadVideoById(video.id.videoId, 0, "large")
+                let datos = new FormData();
+                datos.append("_token", $("#token").attr("content"));
+                datos.append("room", $("#room_id").attr("content"));
+                datos.append("video", video.id.videoId);
+
+                $.ajax({
+                    type: "POST",
+                    url: $(element).attr("action"),
+                    data: datos,
+                    processData: false,
+                    contentType: false
+                });
             });
 
             $("#videos").append($thumbnail);
