@@ -2,3 +2,6 @@
     /* IMPORTANTE */
     text-align: center;
 }
+.imagen-prueba {
+    background-image: url('../images/home1.jpg');
+}

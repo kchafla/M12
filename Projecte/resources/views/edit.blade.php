@@ -11,6 +11,7 @@
                 <div class="p-6 bg-white border-b border-gray-200">
                     <!---->
                     <div class="centrado">
+                        <!--Apartat per a modificar les dades de l'usuari-->
                         <h3>Editar les dades de l'usuari</h3><br><br><br>
 
                         Nou nom per a l'usuari: <br><input type="text" name="username" value="{{Auth::user()->name}}"><br><br>

@@ -12,7 +12,7 @@
                     <!---->
                     Pagina de Inicio
                     
-
+                        <!--Carousel de imatges-->
                         <div id="carouselId" class="carousel slide" data-ride="carousel" data-interval="1000">
                             <ol class="carousel-indicators">
                                 <li data-target="#carouselId" data-slide-to="0" class="active"></li>
@@ -22,6 +22,10 @@
                             <div class="carousel-inner" role="listbox">
                                 <div class="carousel-item active">
                                     <img src="images/home1.jpg" alt="Image1" height="50%"  class="responsive col-md-12 rounded">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Tots junts</h5>
+                                        <p>Tots junts les coses són més divertides.</p>
+                                    </div>
                                 </div>
                                 <div class="carousel-item">
                                     <img src="images/home2.jpg" alt="Image2" class="responsive col-md-12 rounded">
@@ -40,6 +44,8 @@
                                 <span class="sr-only">Next</span>
                             </a>
                         </div>
+
+                        <!--Altres apartats en proces-->
 
                     <!---->
                 </div>

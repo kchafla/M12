@@ -89,6 +89,49 @@
                         </div>
                     </div>
 
+                    <div class="row">
+                        <div class="col-md-12">
+                            <!--Apartat cerca video segona fila-->
+                            <div class="row">
+                                <!--Apartat cerca video-->
+                                <div class="col-md-2" style="border-color: coral; border-width: 10px; margin-left: 20px; margin-right: 20px; margin-top: 20px">
+                                    <br><br>
+                                    <br><br>
+                                    <br><br>
+                                    <br><br>
+                                </div>
+                                <!--Apartat cerca video-->
+                                <div class="col-md-2" style="border-color: coral; border-width: 10px; margin-left: 20px; margin-right: 20px; margin-top: 20px">
+                                    <br><br>
+                                    <br><br>
+                                    <br><br>
+                                    <br><br>
+                                </div>
+                                <!--Apartat cerca video-->
+                                <div class="col-md-2" style="border-color: coral; border-width: 10px; margin-left: 20px; margin-right: 20px; margin-top: 20px">
+                                    <br><br>
+                                    <br><br>
+                                    <br><br>
+                                    <br><br>
+                                </div>
+                                <!--Apartat cerca video-->
+                                <div class="col-md-2" style="border-color: coral; border-width: 10px; margin-left: 20px; margin-right: 20px; margin-top: 20px">
+                                    <br><br>
+                                    <br><br>
+                                    <br><br>
+                                    <br><br>
+                                </div>
+                                <!--Apartat cerca video-->
+                                <div class="col-md-2" style="border-color: coral; border-width: 10px; margin-left: 20px; margin-top: 20px">
+                                    <br><br>
+                                    <br><br>
+                                    <br><br>
+                                    <br><br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <!---->
                 </div>
             </div>
