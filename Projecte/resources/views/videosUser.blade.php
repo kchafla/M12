@@ -4,15 +4,15 @@
            
         </h2>
     </x-slot>
-
-    <div class="py-12">
+    <h2 class="pl-12">Sala de videos</h2>
+    <div class="pb-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 bg-white border-b border-gray-200">
+                <div class="p-6 bg-dark border-b border-gray-200 text-light">
                     <!---->
                     Pagina de videos
                     <br>
-                    <input type="text" name="cerca" value="cerca" class=" col-md-12">
+                    <input type="text" name="cerca" value="cerca" class=" col-md-12 text-dark">
                     <br>
                     <div class="row">
                         <!--Apartat del video seleccionat-->
@@ -37,7 +37,7 @@
                                 <br><br>
                                 <br><br>
                                 <br><br>
-                                <input type="text" value="escriu un nou missatge..." class="col-md-12">
+                                <input type="text" value="escriu un nou missatge..." class="col-md-12 text-dark">
                             </div>
                         </div>
                     </div>
