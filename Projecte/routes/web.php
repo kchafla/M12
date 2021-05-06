@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\EdicioUserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,5 +32,5 @@ Route::get('/videos', function(){
     return view('videosUser');
 })->name('videos');
 
-
+Route::post('/updateUser', [EdicioUserController::class, 'edit']);
 require __DIR__.'/auth.php';
