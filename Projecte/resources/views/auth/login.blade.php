@@ -10,7 +10,7 @@
             
                 <a href="/">
                     <!--<x-application-logo class="w-20 h-20 fill-current text-gray-500" />-->
-                    <center><img src="images/logo.png" height="200" width="200" /></center>
+                    <center><img src="images/web/logo.png" height="200" width="200" alt="logotip de l'empresa, está basat en un mussol amb el nom de l'empresa Watch With Us" /></center>
                 </a>
             
         <form method="POST" action="{{ route('login') }}">

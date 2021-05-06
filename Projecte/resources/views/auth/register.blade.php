@@ -7,7 +7,7 @@
 
         <!-- Validation Errors -->
         <x-auth-validation-errors class="mb-4" :errors="$errors" />
-        <center><img src="images/logo.png" height="200" width="200" /></center>
+        <center><img src="images/web/logo.png" height="200" width="200" /></center>
         <form method="POST" action="{{ route('register') }}">
             @csrf
 

@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use App\Models\User;
+use Illuminate\Support\Facades\Storage;
+use File;
 class EdicioUserController extends Controller
 {
     /**
@@ -57,6 +59,10 @@ class EdicioUserController extends Controller
      */
     public function edit(Request $request)
     {
+        $request->validate([
+            'background' => 'mimes:jpeg,bmp,png' // Only allow .jpg, .bmp and .png file types.
+        ]);
+
         $user = User::find($request->id);
         if($request->name != ""){
             $user->name = $request->name;
@@ -67,7 +73,26 @@ class EdicioUserController extends Controller
         if($request->password != ""){
             $user->password = Hash::make($request->password);
         }
-        
+
+        if($request->background != ""){
+  
+            $imgName = time().'.'.$request->background->extension();
+
+            
+            $request->background->move(public_path('images/background'), $imgName);
+
+            
+            $image_path =   public_path('images/background/' . $user->background);
+            
+            if(file_exists($image_path)){
+               
+                File::delete($image_path);
+            }
+
+            
+
+            $user->background = $imgName;
+        }
 
         $user->save();
         

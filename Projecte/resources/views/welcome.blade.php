@@ -4,14 +4,12 @@
             {{ __('Dashboard') }}
         </h2>
     </x-slot>
-
-    <div class="py-12">
+    <div class="py-10">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 bg-dark border-b border-gray-200 text-light">
+            <div class="p-6 bg-dark border-b border-gray-200 text-light backgrounDark" alt="background fosc" aria="hidden">
                     <!---->
                      <!---->
-                     Pagina de Inicio
                     
                     <!--Carousel de imatges-->
                     <div id="carouselId" class="carousel slide" data-ride="carousel" data-interval="1000">
@@ -22,17 +20,17 @@
                         </ol>
                         <div class="carousel-inner" role="listbox">
                             <div class="carousel-item active">
-                                <img src="images/home1.jpg" alt="Image1" height="50%"  class="responsive col-md-12 rounded">
+                                <img src="images/web/home1.jpg" alt="Image1" height="50%"  class="responsive col-md-12 rounded">
                                 <div class="carousel-caption d-none d-md-block">
                                     <h5 class="text-dark">Tots junts</h5>
                                     <p class="text-dark">Tots junts les coses són més divertides.</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="images/home2.jpg" alt="Image2" class="responsive col-md-12 rounded">
+                                <img src="images/web/home2.jpg" alt="Image2" class="responsive col-md-12 rounded">
                             </div>
                             <div class="carousel-item">
-                                <img src="images/home3.jpg" alt="Image3" class="responsive col-md-12 rounded">
+                                <img src="images/web/home3.jpg" alt="Image3" class="responsive col-md-12 rounded">
                             </div>
                             
                         </div>
@@ -49,9 +47,14 @@
                     <!--Altres apartats en proces-->
                     <br><br><br>
                     <div class="col-md-12 col-12">
-                        <h5>Comparteix amb els teus amics el millor contingut a la xarxa a temps real</h5>
+                        <h5 class="text-info">Comparteix amb els teus amics el millor contingut a la xarxa a temps real</h5>
                         <br>
                         <p>Pasa el temps amb els teus amics parlant del video que esteu visualitzant. Paseu el temps com sempre, tots junts, pero amb la seguretat de estar a la teva casa sense preocuparte de portar una mascareta o gel per a les mans.</p>
+                    </div>
+                    <div class="col-md-12 col-12">
+                        <h5 class="text-info">Gaudeix de la próximitat que ofereix la xarxa</h5>
+                        <br>
+                        <p>Amb tot el succeit amb la pandemia que tots estem patin, gaudeix de pasar un bon temps amb les persones que t'estimes com s'hi fossiu tots en la mateixa habitació. Amb "Watch With Us" compartiu el mateix video al mateix temps i en el moment que un dels dos pausi el video o l'avançi, l'altre també fará aquest canvi.</p>
                     </div>
                 <!---->
                     <!---->

@@ -1,4 +1,4 @@
-<nav x-data="{ open: false }" class="bg-dark text-primary border-b border-gray-100">
+<nav x-data="{ open: false }" class="bg-dark text-primary border-b border-gray-100 backgrounDark">
     <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
@@ -7,7 +7,7 @@
                 <div class="flex-shrink-0 flex items-center">
                     <a href="{{ route('dashboard') }}">
                         <!--<x-application-logo class="block h-10 w-auto fill-current text-gray-600" />-->
-                        <img src="images/logo.png" width="50" height="50">
+                        <img src="images/web/logo.png" width="70" height="70" alt="logotip de l'empresa, está basat en un mussol amb el nom de l'empresa Watch With Us">
                     </a>
                 </div>
 
